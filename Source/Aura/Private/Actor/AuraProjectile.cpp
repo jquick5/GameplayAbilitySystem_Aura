@@ -54,6 +54,7 @@ void AAuraProjectile::Destroyed()
 		}
 	}
 	Super::Destroyed();
+	bHit = true;
 }
 
 void AAuraProjectile::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
@@ -78,6 +79,7 @@ void AAuraProjectile::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, 
 		{
 			LoopingSoundComponent->Stop();
 		}
+		bHit = true;
 	}
 
 	if (HasAuthority())
