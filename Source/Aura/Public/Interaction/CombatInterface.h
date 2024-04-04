@@ -21,8 +21,7 @@ USTRUCT(BlueprintType)
 struct FTaggedMontage
 {
 	GENERATED_BODY()
-	;
-
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	UAnimMontage* Montage = nullptr;
 
